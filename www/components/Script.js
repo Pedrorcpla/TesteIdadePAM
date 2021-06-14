@@ -25,5 +25,10 @@ $(document).on("click","#verificar",function(){
       $("#info").html("<h3>"+nome+" é criança ainda!</h3>");
     }
   }
+
+  if(idade <= 0){
+    $("#info").html("<h3>Idade inválida!</h3>");
+    $("#imagem").attr("src", "https://www.gov.br/cvm/pt-br/assuntos/protecao/alertas/cvmalerta.png/@@images/995f9847-2ad3-4371-b800-2ae4bf96ab41.png");
+  }
 });
 
